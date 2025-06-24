@@ -63,6 +63,7 @@ monthly_pattern = monthly_factors * data['adjusted_sick_days'].mean()
 
 # Dash app setup
 app = JupyterDash(__name__)
+server = app.server
 
 app.layout = html.Div([
     html.H1("Siemens Sick Leave Analysis Dashboard", style={'textAlign':'center', 'color':SIEMENS_PRIMARY}),
